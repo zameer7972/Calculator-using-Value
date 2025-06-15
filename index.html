@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="calculator">
+        <input type="text" id="data">
+        <div class="B2">
+            <button class="b1" onclick="count='';
+            document.querySelector('#data').value=count;">C</button>
+            <button class="b1" onclick="count=count+'1';
+            document.querySelector('#data').value=count;">1</button>
+            <button class="b1" onclick="count=count+'2';
+            document.querySelector('#data').value=count;">2</button>
+            <button class="b1" onclick="count=count+'3';
+            document.querySelector('#data').value=count;">3</button>
+            <button class="b1" onclick="count=count+'4';
+            document.querySelector('#data').value=count;">4</button>
+            <button class="b1" onclick="count=count+'5';
+            document.querySelector('#data').value=count;">5</button>
+            <button class="b1" onclick="count=count+'6';
+            document.querySelector('#data').value=count;">6</button>
+            <button class="b1" onclick="count=count+'7';
+            document.querySelector('#data').value=count;">7</button>
+            <button class="b1" onclick="count=count+'8';
+            document.querySelector('#data').value=count;">8</button>
+            <button class="b1" onclick="count=count+'9';
+            document.querySelector('#data').value=count;">9</button>
+            <button class="b1" onclick="count=count+'0';
+            document.querySelector('#data').value=count;">0</button>
+            <button class="b1" onclick="count=count+'+';
+            document.querySelector('#data').value=count;">+</button>
+            <button class="b1" onclick="count=count+'-';
+            document.querySelector('#data').value=count;">-</button>
+            <button class="b1" onclick="count=count+'*';
+            document.querySelector('#data').value=count;">*</button>
+            <button class="b1" onclick="count=count+'/';
+            document.querySelector('#data').value=count;">/</button>
+            <button class="b1" onclick="
+            let result=eval(count);
+            count=result;
+            document.querySelector('#data').value=count;">=</button>
+        </div>
+    </div>
+    <script>
+        let count=" ";
+        document.querySelector('#data').value=count;
+    </script>
+</body>
+</html>
